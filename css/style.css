@@ -4,15 +4,38 @@
 }
 
 body{
-
+    background-color: #343434;
+    color:white;
 }
 
 
-.navigation .links a{
+header{
+    background-color: #2B2B2B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:.5em 2em;
+    /* color:white; */
+}
+
+.navigation  ul li {
+    list-style-type: none;
+}
+
+.navigation  ul a{
     display:none;
-    /* text-decoration: none;
-    color:black */
 }
+
+.navigation-links{
+    
+}
+
+.burger-container{
+}
+
+.burger-container div:before{
+}
+
 
 
 /* Default styles for mobile */ 
@@ -47,6 +70,17 @@ body{
 
      /* Media query for desktops */
      @media (min-width: 1024px) {
+
+        .navigation .links a{
+            display:inline;
+            text-decoration: none;
+            color:black
+        }
+
+        .burger-container{
+            display:none;
+        }
+
        /* .grid-container-flex {
          font-size: 2rem;
        }
