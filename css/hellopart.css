@@ -50,12 +50,12 @@
     width: 2em;
 }
 
-#projects-view{
-    padding:1rem 2rem;
+#projects-view-btn{
+    padding:1rem 1.5rem;
+    border:none;
     border-radius: 1.5rem;
-
+    font-size:1.1rem;
     font-weight: 500;
-    /* font-size: 1.3em; */
     font-family: "Poppins", sans-serif;
     color:black;
 }
@@ -67,7 +67,7 @@
         font-size: 1.5rem;
     }
 
-    #projects-view{
+    #projects-view-btn{
         font-size: 1.5rem;
         padding:1.2rem 2.5rem;
     }
@@ -79,7 +79,7 @@
         font-size: 2rem;
     }
 
-    #projects-view{
+    #projects-view-btn{
         /* padding:1rem 2rem; */
         font-size: 2rem;
         padding:1.3rem 3rem;
