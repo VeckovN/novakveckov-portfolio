@@ -1,0 +1,87 @@
+/* CONTAINER BASED ON REM UNITS */
+#hello-part{
+    padding:15rem 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+}
+
+#hello-part .hello-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+/* ALL CHILDREN USE EM UNITS (BASED ON CONTAINER font-size) */
+#hello-part .hello-message p{
+    font-size: 1.5em;
+    font-weight: 300;
+    /* padding:-0rem 0rem; */
+}
+#hello-part .hello-message h2{
+    font-size: 3em;
+    padding-bottom: .1em;
+    font-family: "Montserrat", sans-serif;
+}
+
+#hello-part .hello-message h6{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+
+#social-links{
+    display: flex;
+    padding: 1em 0em;
+}
+
+#social-links a {
+    /* width: 2em; */
+    margin:0em .5em;
+}
+
+#social-links a img{
+    width: 2em;
+}
+
+#projects-view{
+    padding:1rem 2rem;
+    border-radius: 1.5rem;
+
+    font-weight: 500;
+    /* font-size: 1.3em; */
+    font-family: "Poppins", sans-serif;
+    color:black;
+}
+
+
+@media (min-width: 768px) {
+
+    #hello-part{
+        font-size: 1.5rem;
+    }
+
+    #projects-view{
+        font-size: 1.5rem;
+        padding:1.2rem 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #hello-part{
+        font-size: 2rem;
+    }
+
+    #projects-view{
+        /* padding:1rem 2rem; */
+        font-size: 2rem;
+        padding:1.3rem 3rem;
+    }
+}
