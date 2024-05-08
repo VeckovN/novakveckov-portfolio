@@ -3,12 +3,63 @@
     padding:0;
     /* box-sizing: border-box; */
 }
+
+html{
+    /* by default  font-size 1rem = 16px */
+    font-size: 62.5%;
+    /* 16px * 0.625 = 10px */
+    /* for example p => font-size: 1.8rem  ---> 10px * 1.8 = 18px */
+}
    
 body{
     background-color: #343434;
     color:white;
 }
 
+header{
+    background-color: #2B2B2B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 3rem;
+    /* color:white; */
+}
+
+main{
+    background-color: rgb(170, 170, 170);
+    /* width:100%; */
+    /* height: 100vh; */
+    padding: 0em 3rem;
+}
+
+footer{
+    padding:1em 1em;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    
+    header{
+        padding:1rem 4.5rem;
+    }
+    main{
+        padding: 0em 4.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    header{
+        padding:1rem 5.5rem;
+    }
+
+    main{
+        padding: 0em 5.5rem;
+    }
+}
    
 /* Default styles for mobile */ 
     /* .grid-container-flex {
