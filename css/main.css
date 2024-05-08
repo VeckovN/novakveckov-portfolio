@@ -26,7 +26,6 @@ header{
 }
 
 main{
-    background-color: rgb(170, 170, 170);
     /* width:100%; */
     /* height: 100vh; */
     padding: 0em 3rem;
@@ -41,7 +40,11 @@ footer{
 }
 
 @media (min-width: 768px) {
-    
+
+    /* html{
+        font-size: 72.5%;
+    } */
+
     header{
         padding:1rem 4.5rem;
     }
@@ -51,6 +54,7 @@ footer{
 }
 
 @media (min-width: 1024px) {
+
     
     header{
         padding:1rem 5.5rem;
