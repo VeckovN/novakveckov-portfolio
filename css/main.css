@@ -43,6 +43,15 @@ footer{
     text-align: center;
 }
 
+@media (min-width: 576px) {
+    header{
+        padding:1rem 5.5rem;
+    }
+    main{
+        padding: 0em 5.5rem;
+    }
+}
+
 @media (min-width: 768px) {
 
     /* html{
