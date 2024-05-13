@@ -9,11 +9,12 @@
 }
 
 .skills-part#techs{
-    margin:2rem 0rem;
+    padding-top:2rem;
 }
 
 .skills-part#tools{
-    margin:4rem 0rem 2rem 0rem;
+    margin:2rem 0rem 2rem 0rem;
+
 }
 
 .stack-line{
