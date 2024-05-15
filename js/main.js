@@ -58,20 +58,45 @@ projectsButton.addEventListener("click", function(event) {
     scrollToSection(projectsSection, event);
 });
 
+// set fixed header after reach some element
 
-// document.getElementById('аbout-link').addEventListener('click', function(event){
-//     event.preventDefault();
-//     const scrollElement = document.getElementById('aboutMe-part');
-//     scrollElement.scrollIntoView({behavior:'smooth'});
-// });
-// document.getElementById('project-link').addEventListener('click', function(event){
-//     event.preventDefault();
-//     const scrollElement = document.getElementById('projects-part');
-//     scrollElement.scrollIntoView({behavior:'smooth'});
-// });
-// document.getElementById('project-link').addEventListener('click', function(event){
-//     event.preventDefault();
-//     const scrollElement = document.getElementById('projects-part');
-//     scrollElement.scrollIntoView({behavior:'smooth'});
-// });
+// 'DOMContentLoaded' fires when the DOM content is loaded, without waiting for images and stylesheets to finish loading.
+// 'load' event is fired when the whole page has loaded,
+
+document.addEventListener("DOMContentLoaded", function(){
+    const header = document.querySelector("header");
+    const aboutMeSection = document.getElementById("aboutMe-part");
+    // const aboutMeSection = document.getElementById("techs");
+    console.log("DOMContentLoaded Executed");
+
+    let lastKnowScrollPosition = 0;
+    // ticking: A boolean flag to track if a scroll update is already scheduled.
+    let ticking = false;
+
+    function handleScroll(scrollPos){
+        const aboutMeSectionTop = aboutMeSection.offsetTop + 40;
+        
+        if (!header.classList.contains('mobile')){
+            if(scrollPos >= aboutMeSectionTop){
+                header.classList.add('fixed');
+            }
+            else{
+                header.classList.remove('fixed');;            
+            }
+        }
+    }
+
+    document.addEventListener('scroll', function(){
+        lastKnowScrollPosition = window.scrollY;
+
+        if(!ticking){
+            // the function to call when it's time to update your animation for the next repaint.
+            window.requestAnimationFrame(function(){
+                handleScroll(lastKnowScrollPosition);
+                ticking = false;
+            });
+            ticking = true;
+        }
+    })
+})
 

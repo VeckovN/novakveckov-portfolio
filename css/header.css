@@ -24,6 +24,21 @@
     -webkit-transition: all .1s ease-in-out;
 }
 
+.fixed{
+    /* this take whole width without width:100% */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    /* anim for entering */
+    animation: slideDown .3s ease-in-out; 
+}
+
+.slidingUp{
+    animation: slideUp .3s forwards;
+}
+
 .burger-menu.active{
     padding:1rem 8rem;
 }
@@ -123,5 +138,26 @@ li {
 
     .burger-menu{
         display:none;
+    }
+}
+
+
+@keyframes slideDown {
+    /* 0% */
+    from{
+        top: -50px;
+    }
+    /* 100% */
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slideUp {
+    from{
+        top: 0;
+    }
+    to {
+        top: -100px;
     }
 }

@@ -27,6 +27,8 @@ header{
     padding:1rem 4rem;
 
     z-index: 10;
+    top:0;
+    /* transition: top 0.3s ease-in-out; */
 }
 header.mobile{
     position:fixed;
