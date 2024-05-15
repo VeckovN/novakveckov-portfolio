@@ -12,6 +12,7 @@
     height: 100%;
     width: 2.5rem;
     cursor: pointer;
+    margin-right:1rem;
 }
   
 .burger-menu .line{
@@ -21,6 +22,10 @@
     margin:.3rem auto;
     transition: all .1s ease-in-out;
     -webkit-transition: all .1s ease-in-out;
+}
+
+.burger-menu.active{
+    padding:1rem 8rem;
 }
 
 .burger-menu.active .line:nth-child(2){
@@ -85,6 +90,18 @@ li {
 .navigation-links.active ul li a{
     font-weight: 300;
     font-size:1.7rem;
+}
+
+@media (min-width: 576px) {
+    .burger-menu.active{
+        padding-right: 11rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .burger-menu.active{
+        padding-right: 13rem;
+    }
 }
 
 @media (min-width: 1024px) {

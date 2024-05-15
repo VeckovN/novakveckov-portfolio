@@ -25,7 +25,12 @@ header{
     align-items: center;
     justify-content: space-between;
     padding:1rem 4rem;
-    /* color:white; */
+
+    z-index: 10;
+}
+header.mobile{
+    position:fixed;
+    width: 100%;
 }
 
 main{

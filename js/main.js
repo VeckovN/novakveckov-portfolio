@@ -1,10 +1,12 @@
 
+const header = document.querySelector('.navigation');
 const hamburger = document.querySelector(".burger-menu")
 const nav = document.querySelector(".navigation-links");
 const nav_link = document.querySelectorAll(".link");
 
 //Not hoisted (must be delcared before eventListener)
 const showMobileMenu = () =>{
+    header.classList.toggle('mobile');
     hamburger.classList.toggle("active");
     nav.classList.toggle("active");
 }
