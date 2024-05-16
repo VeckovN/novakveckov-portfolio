@@ -27,7 +27,7 @@ header{
     padding:1rem 4rem;
 
     z-index: 10;
-    top:0;
+    /* top:0; */
     /* transition: top 0.3s ease-in-out; */
 }
 header.mobile{
@@ -42,6 +42,11 @@ main{
     height: 100vh; */
     padding: 0em 4rem;
     max-width:1300px;   
+}
+
+/* when the header is showned ,this fixing context jumping occured position:fixed*/
+main.fixed-margin {
+    margin-top: 7.5rem; /* value based on the header height */
 }
 
 /* suggestion - add style for every h2 in sections (part names) */

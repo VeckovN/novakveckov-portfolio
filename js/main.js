@@ -65,6 +65,7 @@ projectsButton.addEventListener("click", function(event) {
 
 document.addEventListener("DOMContentLoaded", function(){
     const header = document.querySelector("header");
+    const mainContante = document.querySelector("main");
     const aboutMeSection = document.getElementById("aboutMe-part");
     // const aboutMeSection = document.getElementById("techs");
     console.log("DOMContentLoaded Executed");
@@ -79,9 +80,11 @@ document.addEventListener("DOMContentLoaded", function(){
         if (!header.classList.contains('mobile')){
             if(scrollPos >= aboutMeSectionTop){
                 header.classList.add('fixed');
+                mainContante.classList.add('fixed-margin');
             }
             else{
-                header.classList.remove('fixed');;            
+                header.classList.remove('fixed');
+                mainContante.classList.remove('fixed-margin');          
             }
         }
     }
