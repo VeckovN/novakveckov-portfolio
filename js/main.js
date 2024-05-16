@@ -11,6 +11,7 @@ const showMobileMenu = () =>{
     nav.classList.toggle("active");
 }
 const removeActiveOnLinkClick = () =>{
+    header.classList.remove('mobile');
     nav.classList.remove("active");
     hamburger.classList.remove("active");
 }
