@@ -102,5 +102,18 @@ document.addEventListener("DOMContentLoaded", function(){
             ticking = true;
         }
     })
+
+    const resetMobileClasses = () => {
+        if (window.innerWidth > 1024) {
+            header.classList.remove('mobile');
+            nav.classList.remove("active");
+            hamburger.classList.remove("active");
+            header.style.position = '';
+            header.style.width = '';
+        }
+    }
+
+    window.addEventListener("resize", resetMobileClasses);
 })
+
 
