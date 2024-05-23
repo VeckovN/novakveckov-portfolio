@@ -3,17 +3,21 @@ const header = document.querySelector('.navigation');
 const hamburger = document.querySelector(".burger-menu")
 const nav = document.querySelector(".navigation-links");
 const nav_link = document.querySelectorAll(".link");
+const bodyContent = document.querySelector("body");
 
 //Not hoisted (must be delcared before eventListener)
 const showMobileMenu = () =>{
     header.classList.toggle('mobile');
     hamburger.classList.toggle("active");
     nav.classList.toggle("active");
+    bodyContent.classList.toggle("active");
+
 }
 const removeActiveOnLinkClick = () =>{
     header.classList.remove('mobile');
     nav.classList.remove("active");
     hamburger.classList.remove("active");
+    bodyContent.classList.remove("active");
 }
 
 hamburger.addEventListener('click', showMobileMenu);

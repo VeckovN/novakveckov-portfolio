@@ -16,7 +16,10 @@ body{
     /* background-color: #1f1f1f; */
     background-color: #222222;
     color:white;
-    
+}
+
+body.active{
+    overflow: hidden;
 }
 
 header{
@@ -48,6 +51,12 @@ main{
 main.fixed-margin {
     margin-top: 7.5rem; /* value based on the header height */
 }
+/* main .active{
+    overflow-y:hidden;
+} */
+
+
+
 
 /* suggestion - add style for every h2 in sections (part names) */
 /* section h2{
