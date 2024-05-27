@@ -121,3 +121,31 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 
+// Observer - section scroll animations
+let observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+        //For showing anmation onces
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }//else if you want to show animation mutiple times
+        else{
+            entry.target.classList.remove('show');
+        }
+    })
+})
+
+const sectionsElements = document.querySelectorAll(".hiddenE");
+//loop through all section elements and observe it(with before defined observer)
+sectionsElements.forEach((el) => observer.observe(el));
+
+
+//Dinamicly add animationDelay values for tech-icons
+const skillPart = document.querySelectorAll('.skills-part');
+
+skillPart.forEach(section =>{
+    const techIcons = section.querySelectorAll(".tech-icon");
+    techIcons.forEach((icon, index) =>{
+        icon.style.animationDelay = `${index * .05}s`;
+        observer.observe(icon);
+    })
+})
