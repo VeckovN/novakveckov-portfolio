@@ -48,6 +48,23 @@
     margin: 1rem 0rem;
 }
 
+.tech-icon.show{
+    opacity: 0;
+    animation: show-on-scroll .5s forwards;
+}
+
+@keyframes show-on-scroll {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+        filter:blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        filter:blur(0);
+    }
+}
 .tech-icon img{
     width: 5rem;
     height: 4rem;

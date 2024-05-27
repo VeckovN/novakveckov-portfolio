@@ -57,6 +57,40 @@ main.fixed-margin {
 
 
 
+/* .hiddenE{
+    opacity: 0;
+    filter:blur(5px);
+    transform:  translateY(-20px);
+    transition: all 1s;
+} */
+
+/* .hiddenE{
+    opacity: 0;
+    filter:blur(5px);
+} */
+
+/* Observer scroll animation */
+.show{
+    /* animation: scroll-in 2s forwards; */
+    opacity: 1;
+    filter:blur(0);
+    /* transform:  translateX(0); */
+    animation: scroll-in .5s forwards;
+}
+
+
+@keyframes scroll-in {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+        filter:blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        filter:blur(0);
+    }
+}
 
 /* suggestion - add style for every h2 in sections (part names) */
 /* section h2{
