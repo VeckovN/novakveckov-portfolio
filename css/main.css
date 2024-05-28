@@ -44,7 +44,8 @@ main{
     /* width:100%;
     height: 100vh; */
     padding: 0em 4rem;
-    max-width:1300px;   
+    max-width:1300px;  
+    background-color: red; 
 }
 
 /* when the header is showned ,this fixing context jumping occured position:fixed*/
