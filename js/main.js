@@ -134,7 +134,7 @@ let observer = new IntersectionObserver((entries) =>{
     })
 })
 
-const sectionsElements = document.querySelectorAll(".hiddenE");
+const sectionsElements = document.querySelectorAll(".hidden");
 //loop through all section elements and observe it(with before defined observer)
 sectionsElements.forEach((el) => observer.observe(el));
 
