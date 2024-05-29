@@ -56,18 +56,10 @@ main.fixed-margin {
 } */
 
 
-
-/* .hidden{
+.hidden{
     opacity: 0;
-    filter:blur(5px);
-    transform:  translateY(-20px);
-    transition: all 1s;
-} */
-
-/* .hidden{
-    opacity: 0;
-    filter:blur(5px);
-} */
+    /* filter:blur(5px); */
+}
 
 /* Observer scroll animation */
 .show{

@@ -120,19 +120,25 @@ document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener("resize", resetMobileClasses);
 })
 
+let options = {
+    root: null, 
+    rootMargin: '0px', 
+    threshold: 0.1 
+};
 
 // Observer - section scroll animations
 let observer = new IntersectionObserver((entries) =>{
     entries.forEach((entry) =>{
         //For showing anmation onces
-        if(entry.isIntersecting){
+        // if(entry.isIntersecting && !entry.target.classList.contains("show")){ //conditional added to avoid redundant animatio triggers
+        if(entry.isIntersecting){ //conditional added to avoid redundant animatio triggers
             entry.target.classList.add("show");
         }//else if you want to show animation mutiple times
         else{
-            entry.target.classList.remove('show');
+            entry.target.classList.remove("show");
         }
     })
-})
+}, options);
 
 const sectionsElements = document.querySelectorAll(".hidden");
 //loop through all section elements and observe it(with before defined observer)
