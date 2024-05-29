@@ -1,6 +1,7 @@
 /* CONTAINER BASED ON REM UNITS */
 #hello-part{
-    padding:25rem 0em 17rem 0rem;
+    /* padding:25rem 0em 17rem 0rem; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
