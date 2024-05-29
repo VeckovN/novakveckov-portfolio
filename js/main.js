@@ -151,7 +151,7 @@ const skillPart = document.querySelectorAll('.skills-part');
 skillPart.forEach(section =>{
     const techIcons = section.querySelectorAll(".tech-icon");
     techIcons.forEach((icon, index) =>{
-        icon.style.animationDelay = `${index * .05}s`;
+        icon.style.animationDelay = `${index * .07}s`;
         observer.observe(icon);
     })
 })
