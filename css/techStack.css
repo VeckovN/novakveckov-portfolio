@@ -24,6 +24,25 @@
     left:.5rem;
     font-size: 1rem;
 }
+.stack-line.show{
+    opacity: 1;
+    filter:blur(0);
+    /* transform:  translateX(0); */
+    animation: scroll-left .5s forwards;
+}
+
+@keyframes scroll-left {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+        filter:blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        filter:blur(0);
+    }
+}
 
 .stack-line .line{
     background-color: white;
