@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 html{
@@ -40,9 +41,7 @@ header.mobile{
 
 main{
     /* centralize main container (bout sides have same margin */
-    /* margin:0 auto 0 auto;  */
-    /* width:100%;
-    height: 100vh; */
+    margin:0 auto 0 auto; 
     padding: 0em 4rem;
     max-width:1300px;   
 }
@@ -50,6 +49,7 @@ main{
 /* when the header is showned ,this fixing context jumping occured position:fixed*/
 main.fixed-margin {
     margin-top: 7.5rem; /* value based on the header height */
+
 }
 /* main .active{
     overflow-y:hidden;
