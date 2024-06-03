@@ -40,7 +40,8 @@
 }
 
 .burger-menu.active{
-    padding:1rem 8rem;
+    padding:1rem 0rem;
+    /* background-color: red; */
 }
 
 .burger-menu.active .line:nth-child(2){
@@ -59,7 +60,7 @@ li {
     list-style-type: none;  
 }
 
- 
+
 .navigation a{
     padding: 0em 1.2rem;
     text-decoration: none;
