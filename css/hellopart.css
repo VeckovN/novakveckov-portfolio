@@ -37,7 +37,7 @@
 #hello-part .hello-message h6{
     font-weight: 500;
     /* font-size: 1.1em; */
-    font-size: 3vw;
+    font-size: 3.2vw;
 }
 
 
@@ -95,7 +95,7 @@
         font-size: 1.9rem;
 
         /* test it why the height is set */
-        /* height: 80vh; */
+        height: 80vh;
     }
 
     #projects-view-btn{
