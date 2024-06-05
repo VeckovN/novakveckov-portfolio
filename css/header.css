@@ -41,7 +41,6 @@
 
 .burger-menu.active{
     padding:1rem 0rem;
-    /* background-color: red; */
 }
 
 .burger-menu.active .line:nth-child(2){
@@ -60,7 +59,6 @@ li {
     list-style-type: none;  
 }
 
-
 .navigation a{
     padding: 0em 1.2rem;
     text-decoration: none;
@@ -75,40 +73,38 @@ li {
 }
 
 .navigation-links.active{
+    width: 100%;
+    height: 100%;
     display: block;
     position:fixed;
     left:0;
-    top: 4.8rem;
+    top: 6.8rem;
     flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
+    background-color: #2B2B2B;
 
     text-align: center;
-    /* transition: all 0.3s;
-    animation: slideDownH .3s ease-in; */
 }
 .navigation-links.active ul{
     width: 100%;
-    height: 100%;
-    min-height: 250px;    
-    padding-top:10em;
+    height: 70%;
+    /* min-height: 250px;     */
     
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #2B2B2B;
-
+    justify-content: center;
+    /* background-color: #2B2B2B; */
 }
 
 .navigation-links.active ul li{
-    margin:2rem 0em;
+    margin:3em 0em;
     animation: slideDownH .1s ease-in;
 }
 
 
 .navigation-links.active ul li a{
     font-weight: 300;
+    font-size: 2em;
 }
 
 @media (min-width: 576px) {
@@ -118,16 +114,12 @@ li {
 }
 
 @media (min-width: 768px) {
-    .burger-menu.active{
-        /* padding-right: 13rem; */
-    }
-
-    .navigation-links.active ul{
-        /* padding-top:10rem; */
-    }
-
     .navigation-links.active ul li{
-        margin:2.5rem 0em;
+        margin-bottom:3.5rem;
+    }
+
+    .navigation-links.active ul li a{
+        font-size: 2em;
     }
 }
 
@@ -141,7 +133,6 @@ li {
         display: none;
     }
 
-
     /* .navigation-links.active{
         display: none;
     } */
@@ -153,7 +144,6 @@ li {
         display:none;
     }
 }
-
 
 @keyframes slideDown {
     /* 0% */
@@ -175,29 +165,11 @@ li {
     }
 }
 
-
 @keyframes slideDownH {
     0%{
-        /* top: -50px; */
-        /* top:4rem; */
         transform:translateY(-50px)
     }
-    /* 100% */
     100% {
-        /* top: 4.8rem; */
         transform:translateY(0)
-    }
-}
-
-@keyframes slideLeft {
-    0%{
-        /* top: -50px; */
-        /* top:4rem; */
-        transform:translateX(-400px)
-    }
-    /* 100% */
-    100% {
-        /* top: 4.8rem; */
-        transform:translateX(0);
     }
 }
