@@ -28,7 +28,7 @@
     font-weight: 300;
 }
 #hello-part .hello-message h2{
-    font-size: 3em;
+    /* font-size: 3em; */
     font-size: 8vw;
     padding-bottom: .1em;
     font-family: "Montserrat", sans-serif;
@@ -74,6 +74,7 @@
 @media (min-width: 576px) {
     #hello-part{
         font-size: 1.7rem;
+        height: 80vh;
     }
 
     #hello-part .hello-message p{
@@ -86,16 +87,21 @@
     #hello-part .hello-message h6{
         font-size: 1.1em;
     }
+
+    #projects-view-btn{
+        font-size: 1.3rem;
+        padding:1.2rem 2.5rem;
+    }
 }
 
 
 @media (min-width: 768px) {
 
     #hello-part{
-        font-size: 1.9rem;
+        font-size: 1.8rem;
 
         /* test it why the height is set */
-        height: 80vh;
+        /* height: 80vh; */
     }
 
     #projects-view-btn{
