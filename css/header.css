@@ -104,12 +104,16 @@ li {
 
 .navigation-links.active ul li a{
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 @media (min-width: 576px) {
     .burger-menu.active{
         /* padding-right: 11rem; */
+    }
+
+    .navigation-links.active ul li a{
+        font-size: 1.8em;
     }
 }
 
