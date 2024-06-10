@@ -109,7 +109,10 @@
 
     font-family: "Poppins", sans-serif;
     font-size: 1.3em;
+}
 
+.project-desc-info span{
+    font-weight: 700;
 }
 
 .projects-desc-techs{
