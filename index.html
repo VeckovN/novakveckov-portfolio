@@ -411,6 +411,7 @@
                 </div>
                 <form id="contact-form" method="POST" data-netlify="true" >
                     <div id="inputs-field-container">
+                        <input type="hidden" name="subject"  value="New Porfolio Contact from %{formName} (%{submissionId})" data-remove-prefix/>
                         <div class="input-field">
                             <label>Name</label>
                             <input name="name" type="text" placeholder="Enter Your Name" required/>
