@@ -105,7 +105,8 @@
 }
 
 .project-desc-info{
-    padding:2rem;
+    /* padding:1.5rem 2rem .5rem 2rem; */
+    padding:1.5rem 2rem .7rem 2rem;
 
     font-family: "Poppins", sans-serif;
     font-size: 1.3em;
@@ -295,8 +296,9 @@
     }
 
     .project-desc-info{
-        
+        padding-bottom:.5rem;   
     }
+    
 }
 
 
