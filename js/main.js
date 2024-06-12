@@ -34,13 +34,22 @@ function scrollToSection(sectionElement, event) {
     sectionElement.scrollIntoView({behavior: 'smooth'});
 }
 
+const logo = document.getElementById("logo");
+const topSection = document.querySelector("html");
+
+
+logo.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollToSection(topSection, event);
+});
+
+
 const aboutLink = document.getElementById("about-link");
 const aboutSection = document.getElementById("aboutMe-part");
 // const aboutSection = document.getElementById("aboutMe-part-context");
 
 aboutLink.addEventListener("click", function(event) {
     event.preventDefault();
-    console.log("Scrolling to section:", aboutSection.id);
     scrollToSection(aboutSection, event);
 });
 
