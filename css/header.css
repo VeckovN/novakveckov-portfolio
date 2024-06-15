@@ -69,6 +69,11 @@ li {
     color:white;
 }
 
+.navigation a:hover{
+    color:rgb(175, 175, 175);
+    font-weight: 300;
+}
+
 .navigation-links{
     display: none;
 }
