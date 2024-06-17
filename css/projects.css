@@ -1,6 +1,6 @@
 #projects-part{
     padding:10rem 0rem;
-    margin:5rem 0rem;
+    margin:20rem 0rem 5rem 0rem;
     /* margin-top:5rem; */
     display: flex;
     flex-direction: column;
@@ -146,7 +146,7 @@
 @media (min-width: 576px) {
 
     .project-desc{
-        font-size:1.2rem;
+        font-size:1.1rem;
     }
 
     .project-tech-icon img{
@@ -240,6 +240,10 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(40px, .5fr)); 
         grid-gap: .5rem 2rem; 
+    }
+
+    .flex-projects{
+        display: flex;
     }
 
 }
