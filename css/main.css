@@ -43,6 +43,7 @@ main{
     /* centralize main container (bout sides have same margin */
     margin:0 auto 0 auto; 
     padding: 0em 4rem;
+    padding: 0em 2rem;
     max-width:1300px;   
 }
 
