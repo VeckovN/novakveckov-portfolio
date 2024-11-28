@@ -27,10 +27,12 @@
 #aboutMe-part-paragraphs{
     font-family: "Poppins", sans-serif;
     font-size: 1.5em;
+
+    text-align: center;   
 }
 
 .aboutMe-paragraph{
-    padding:1rem 0em;
+    padding:.6rem 0em;
 }
 
 #aboutMe-part-picture{
@@ -57,11 +59,20 @@
 
 /* #font-size is chanch that caused automatically children font scalling */
 @media (min-width: 576px) {
+    #aboutMe-part{
+        font-size: 1.1rem;
+    }
 
+    .aboutMe-paragraph{
+        padding:1rem 0em;
+    }
+
+    #aboutMe-part-paragraphs{
+        text-align: unset;
+    }
 }
 
 @media (min-width: 768px) {
-
     #aboutMe-part{
         font-size: 1.5rem;
     }
@@ -72,7 +83,6 @@
 }
 
 @media (min-width: 1024px) {
-
     #aboutMe-part-context{
         flex-direction: row;
     }
