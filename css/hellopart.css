@@ -102,7 +102,7 @@
     }
 
     #projects-view-btn{
-        font-size: 1.5rem;
+        font-size: .7em;
     }
 }
 
@@ -113,11 +113,10 @@
     }
 
     #projects-view-btn{
-        /* padding:1rem 2rem; */
-        font-size: .6em;
+        font-size: .8em;
     }
 
     #social-links a img{
-        width: 2.1em;
+        width: 2.2em;
     }
 }
