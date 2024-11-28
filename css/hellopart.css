@@ -24,14 +24,10 @@
 
 /* ALL CHILDREN USE EM UNITS (BASED ON CONTAINER font-size) */
 #hello-part .hello-message p{
-    /* font-size: 1.2em; */
-    font-size: 4vw;
     font-size: 5vw;
     font-weight: 300;
 }
 #hello-part .hello-message h2{
-    /* font-size: 3em; */
-    font-size: 8vw;
     font-size: 9vw;
     padding-bottom: .1em;
     font-family: "Montserrat", sans-serif;
@@ -39,11 +35,8 @@
 
 #hello-part .hello-message h6{
     font-weight: 500;
-    /* font-size: 1.1em; */
-    font-size: 3.2vw;
     font-size: 3.8vw;
 }
-
 
 #social-links{
     display: flex;
@@ -51,20 +44,19 @@
 }
 
 #social-links a {
-    /* width: 2em; */
     margin:0em .5em;
 }
 
 #social-links a img{
-    width: 2em;
-    width: 2.2em;
+    width: 7vw;
 }
 
 #projects-view-btn{
-    padding:.9rem 1.5rem;
+    padding:2.5vw 5vw;
     border:none;
     border-radius: 1.5rem;
-    font-size:1.1rem;
+    /* font-size:1.1rem; */
+    font-size: 2.5vw;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     color:black;
@@ -78,8 +70,8 @@
 
 @media (min-width: 576px) {
     #hello-part{
-        font-size: 1.7rem;
-        height: 80svh;
+        font-size: 1.8rem;
+        /* height: 80svh; */
     }
 
     #hello-part .hello-message p{
@@ -95,33 +87,37 @@
 
     #projects-view-btn{
         font-size: 1.3rem;
-        padding:1.2rem 2.5rem;
+        padding:1em 1.7em;
+    }
+
+    #social-links a img{
+        width: 2.2em;
     }
 }
 
 
 @media (min-width: 768px) {
-
     #hello-part{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     #projects-view-btn{
         font-size: 1.5rem;
-        padding:1.2rem 2.5rem;
     }
 }
 
 @media (min-width: 1024px) {
-
     #hello-part{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         min-height: 660px;
     }
 
     #projects-view-btn{
         /* padding:1rem 2rem; */
-        font-size: 2rem;
-        padding:1.3rem 3rem;
+        font-size: .7em;
+    }
+
+    #social-links a img{
+        width: 2.2em;
     }
 }
