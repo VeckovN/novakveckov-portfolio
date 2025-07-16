@@ -53,6 +53,10 @@
     gap:.7rem;
 }
 
+.projects-links a {
+    pointer-events: auto;
+  }
+
 .p-link{
     padding:.8rem 1rem;
     width: 9rem;
@@ -91,6 +95,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    pointer-events: none;
 }
 
 .project-image-container img{
