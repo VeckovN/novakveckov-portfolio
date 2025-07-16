@@ -1,4 +1,2 @@
 # Portfolio
-
-## Figma Design (demo)
-https://www.figma.com/file/J1m77yzpuajoeS0m8K3oyX/Porfolio-Site?type=design&node-id=0-1&mode=design&t=AhEIJ98Sb1KJ0r3w-0
+https://novakveckov-portfolio.netlify.app/
